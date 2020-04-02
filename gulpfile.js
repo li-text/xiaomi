@@ -102,7 +102,7 @@ const watchHandler = () => {
   gulp.watch('./src/pages/*.html', htmlHandler)
   gulp.watch('./src/lib/**', libHandler)
   gulp.watch('./src/images/**', imgHandler)
-  gulp.watch('./src/sass/*.scss', sass)
+  gulp.watch('./src/sass/*.scss', sassHandler)
 }
 
 
@@ -120,13 +120,3 @@ module.exports.default = gulp.series(
 
 
 
-// 最后在文件里面导出我准备号的这个方法
-// 导出以后, 我们只能一个任务一个任务的执行
-//   这个方式不好, 我们最好是准备一个任务
-//   这个任务做的事情, 就是把我准备号的五个任务都给我执行了
-// 不需要导出这五个任务了
-// module.exports.css = cssHandler
-// module.exports.js = jsHandler
-// module.exports.html = htmlHandler
-// module.exports.image = imgHandler
-// module.exports.lib = libHandler
