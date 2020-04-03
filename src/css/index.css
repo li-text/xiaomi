@@ -94,6 +94,7 @@ a{
     margin-right: 50px;
     margin-top: 25px;
     border: 1px solid black;
+    padding-left: 10px;
 }
 .navright input{
     border: 0;
