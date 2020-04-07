@@ -105,8 +105,6 @@ const watchHandler = () => {
   gulp.watch('./src/sass/*.scss', sassHandler)
 }
 
-
-
 module.exports.default = gulp.series(
   delHandler,
   gulp.parallel(cssHandler, jsHandler, htmlHandler, imgHandler, libHandler, sassHandler),
