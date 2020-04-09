@@ -102,7 +102,9 @@ function get_left() {
     }
   })
 }
-
+$('.lbt_r>ul').on('click','li',function(){
+  window.location.href='http://www.liling.com:5000/pages/list.html';
+})
 
 // 轮播图
 var mySwiper = new Swiper ('.lbt_big', {
