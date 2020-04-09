@@ -132,9 +132,10 @@ mySwiper.el.onmouseout = function(){
     mySwiper.autoplay.start();
 }     
 
+
 //倒计时
 //声明未来时间
-var future_time=new Date('2020-4-4 12:00:00');
+var future_time=new Date('2020-4-10 12:00:00');
 //获取页面元素
 var nums=document.querySelectorAll('.num');
 function print_time(){
